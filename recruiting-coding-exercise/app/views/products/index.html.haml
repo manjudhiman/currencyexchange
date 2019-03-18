@@ -1,0 +1,18 @@
+%h1 Check out our products!
+
+.row.product-list
+  - @products.each do |product|
+    %article.product
+      %h2= product['time']
+      -puts "***"
+      - product['Cube'].each do |c|
+        %p
+          =c['currency']
+          =c['rate']
+      = link_to 'Show more', product
+      -#%p= product.description
+      -#%strong
+      -#  = product.price
+      -#  EUR
+
+

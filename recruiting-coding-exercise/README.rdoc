@@ -1,0 +1,29 @@
+== 3scale coding exercise
+
+Imagine this is a real production app (I know it's asking a lot). It lists a
+bunch of products, allows us to see its details and provides a link to buy it.
+
+Your task is to add a feature that allows a user to switch between showing the
+price in different currencies (on all pages). We currently show only EUR, we'd
+like GBP, PHP, and USD as well. We'd like to use the exchange rates published
+here: https://www.ecb.europa.eu/stats/eurofxref/eurofxref-hist-90d.xml
+
+Your task would be to:
+* get the data about exchange rates
+* provide a method in the model to show price in different currencies
+* adjust the views to add a possibility to switch currencies dynamically (without a page reload)
+* add tests as considered necessary
+* implement the footer matching design included in this repository as footer.png
+* make changes as needed so that the application would be ready for production
+
+We will evaluate how you accomplish the tasks above paying special attention to:
+* documentation you provide
+* git history
+* application behavior - how does the app:
+  * handle the XML data
+  * behave under error conditions
+  * provide accurate prices
+  * perform at scale
+
+Good luck!
+
